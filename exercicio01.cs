@@ -8,9 +8,7 @@ namespace exerciciosCsharp2
         //fatorial(6);
         //vendaCarro("hatch");
         //calculadora(8, " % ", 5);
-        //planosMassa(1700, "A");
-        //planosMassa(1700, "B");
-        //planosMassa(1700, "C");
+        //planosDeTrabalho(1700, "A");
         //deZeroADez(8);
         //menuLanchonete(100, 3);
         programaNotas(179);
@@ -80,7 +78,7 @@ namespace exerciciosCsharp2
         }
 
         // This function will return the salary increase depending on which plan the employee choosed
-        public static void planosMassa(int salario, String plano) {
+        public static void planosDeTrabalho(int salario, String plano) {
 
             switch(plano) {
                 
