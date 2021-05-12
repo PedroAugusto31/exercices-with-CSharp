@@ -5,12 +5,12 @@ namespace exerciciosCsharp2
     public class exercicio01
     {
         public static void Main(String [] args){
-        //fatorial(6);
-        //vendaCarro("hatch");
-        //calculadora(8, " % ", 5);
-        //planosDeTrabalho(1700, "A");
-        //deZeroADez(8);
-        //menuLanchonete(100, 3);
+        fatorial(6);
+        vendaCarro("hatch");
+        calculadora(8, " % ", 5);
+        planosDeTrabalho(1700, "A");
+        deZeroADez(8);
+        menuLanchonete(100, 3);
         programaNotas(179);
         }
 
