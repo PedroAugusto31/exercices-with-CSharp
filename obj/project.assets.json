@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pedro\\Desktop\\exerciciosCsharp2\\exerciciosC#.csproj",
+      "projectUniqueName": "C:\\Users\\pedro\\Desktop\\exercices-with-CSharp\\exerciciosC#.csproj",
       "projectName": "exerciciosC#",
-      "projectPath": "C:\\Users\\pedro\\Desktop\\exerciciosCsharp2\\exerciciosC#.csproj",
+      "projectPath": "C:\\Users\\pedro\\Desktop\\exercices-with-CSharp\\exerciciosC#.csproj",
       "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pedro\\Desktop\\exerciciosCsharp2\\obj\\",
+      "outputPath": "C:\\Users\\pedro\\Desktop\\exercices-with-CSharp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
