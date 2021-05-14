@@ -7,87 +7,38 @@ namespace exerciciosCsharp2
     {
         public static void main3() {
             
-            //tresVetores();
-            //cumprimentar("Marcelo");
-            //anosEmDias(1);
-            //horasDeTrabalho(150, 40.5f);
-            //mises(2);
-            //maiorOuIgual(0, 0);
-            //estaEntre(11, 10, 100, false);
-            //multiplicacaoManual(5, 1);
-            //repetindoArray("código", 2);
-            /*int [] notas = {1, 2, 3, 4, 5};
-            calcuMedia(notas);
-            */
-            //areaDoTriangulo(7, 9);
-            int [] teste = {5, -15, 50, 3};
-            //menorNumeroArray(teste);
-            //sorteio(2);
-            quantidadePalavras("Sou foda programando");
-            //semVogal("Coder");
+            cumprimentar("Marcelo");
+            anosEmDias(1);
+            horasDeTrabalho(150, 40.5f);
+            mesesDoAno(2);
+            maiorOuIgual(0, 0);
+            multiplicacaoManual(5, 1);
+            repetindoArray("código", 2);
+            areaDoTriangulo(7, 9);
+            sorteio(2);
+            quantidadePalavras("Mensagem de teste");
         }
 
-        public static void tresVetores(){
-            int [] vetorInt = {3, 4, 9};
-            String [] vetorString = {"Pedro", "Marcelo", "Wilsooooooooooooon"};
-            float [] vetorFloat = {2.5f, 6.2f, 4f};
-
-            String resultado = concat(vetorInt, vetorString, vetorFloat);
-            Console.WriteLine(resultado);
-        }
-
-        public static String concat(int [] a, String [] b, float [] c){
-
-            String concatenacao = a.ToString() + b + c.ToString();
-
-            return concatenacao;
-        }
-
-        public static void duasStrings(){
-            String string1 = "batata";
-            String string2 = "bata";
-
-            
-            char [] vetorChar = string1.ToCharArray();
-            char [] vetorChar2 = string2.ToCharArray();
-
-        }
-
-        public static void unirArray(){
-
-            int[] arrayPilha = {1, 2, 3, 4, 5};
-            int[] arrayAdiciona = {6, 7, 8, 9, 10};
-
-            //int [] lul = arrayPilha + arrayAdiciona;
-
-        }
-
-        int[] arrayInt = {2,3,4,5};
-        public static void funcao1(int[] vetor, int multiplyer){
-            int[] iraaa = {};
-            
-            for(int i = 0; i < vetor.Length; i++) {
-                iraaa[i] = vetor[i] * multiplyer;
-            }
-        }
-
+        // Returns a greeting message with the String(name)
         public static void cumprimentar(String nome){
             Console.WriteLine("Olá, " + nome + "!");
         }
 
+        // Converts years in days
         public static void anosEmDias(int anos){
             int dias = anos * 365;
             Console.WriteLine("Deu " + dias + " em dias");
         }
 
-        public static void horasDeTrabalho(int horas, float moneyPerHour){
-            float salario = horas * moneyPerHour;
+        // Calculates the salary of an employee
+        public static void horasDeTrabalho(int horas, float dinheiroPorHora){
+            float salario = horas * dinheiroPorHora;
 
             Console.WriteLine("Salário igual a R$ " + salario);
-
         }
 
-        public static void meses(int mes) {
+        // Returns the month according to the number on the parameter
+        public static void mesesDoAno(int mes) {
             switch(mes){
         case 1: Console.WriteLine("janeiro");
         break;
@@ -116,6 +67,7 @@ namespace exerciciosCsharp2
             }
         }
 
+        // Returns true or false if the first number is greater or equal to the second one
         public static void maiorOuIgual(int num1, int num2) {
             if(num1 >= num2){
                 Console.WriteLine(true);
@@ -124,22 +76,7 @@ namespace exerciciosCsharp2
             }
         }
 
-        public static void estaEntre(int numero, int minimo, int maximo, bool inclusivo){
-            if(inclusivo == true){
-                if(numero >= minimo && numero <= maximo){
-                    Console.WriteLine(true);
-                } else{
-                    Console.WriteLine(false);
-                }
-            } else{
-                if(numero > minimo && numero < maximo){
-                    Console.WriteLine(true);
-                } else{
-                    Console.WriteLine(false);
-                }
-            }
-        }
-        //Função que multiplica sem o operador de multiplação
+        // Function that multiplies a number without the multiply operator
         public static void multiplicacaoManual(int numero, int multi){
             if(numero >= 0 && multi >= 0){
             int issoAi = numero;
@@ -151,48 +88,25 @@ namespace exerciciosCsharp2
          }
        }
 
-       public static void repetindoArray(String nome, int vezesQueRepete){
+        // This function prints the String(nome) how many times you put in the parameter
+        public static void repetindoArray(String nome, int vezesQueRepete){
 
            String [] arrayQueRepete = new string[vezesQueRepete];
            
            for(int i = 0; i < vezesQueRepete; i++){
                arrayQueRepete[i] = nome;
-               Console.WriteLine(arrayQueRepete[i] + i);
+               Console.WriteLine(arrayQueRepete[i]);
            }
        }
 
-        public static void maisRepetido(int vezesRepetido){
-
-            Console.WriteLine("código");
-        }
-
-        public static void calcuMedia(int [] notas){
-            int notaFinal = 0;
-
-            for(int i = 0; i < notas.Length; i++){
-                notaFinal += notas[i];
-            }
-            int resultado = notaFinal / notas.Length;
-            Console.WriteLine(resultado);
-        }
-
+        // Calculates the area of a triangle
          public static void areaDoTriangulo(float baseTri, float altura){
             float area = baseTri * altura / 2;
 
              Console.WriteLine(area.ToString("F2"));
          }
 
-         public static void menorNumeroArray(int [] numeros){
-             int menorNumero = numeros[0];
-
-             for(int i = 0; i < numeros.Length; i++){
-                 if(numeros[i] < menorNumero){
-                     menorNumero = numeros[i];
-                 }
-             }
-             Console.WriteLine(menorNumero);
-         }
-
+        // This function gets the number, and makes a random number, if the number you putted is the same as the random one, it'll print that you hitted it
          public static void sorteio(int numero){
              Random aleatorio = new Random();
              int sorteio = aleatorio.Next(1, 10);
@@ -204,18 +118,11 @@ namespace exerciciosCsharp2
             }
          }
 
+        // This function splits the phrase and returns the number of word in it
           public static void quantidadePalavras(String frase){
               String [] fraseSeparada = frase.Split(" ");
 
               Console.WriteLine(fraseSeparada.Length);
-          }
-
-          public static void semVogal(String frase){
-              char[] fraseCharArray = frase.ToCharArray();
-              char [] novoArray = {};
-                
-              Console.WriteLine(fraseCharArray);
-              
-          }
-    }
+            }
+      }
 }
